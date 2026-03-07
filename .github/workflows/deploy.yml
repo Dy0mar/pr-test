@@ -32,17 +32,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build
-        run: npx slidev build --base /pr-test/
+        run: pnpm exec slidev build --base /pr-test/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
