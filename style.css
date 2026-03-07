@@ -1,0 +1,92 @@
+/* --- Theme Variables & Overrides --- */
+:root {
+  --slidev-code-padding: 2px!important;
+  --slidev-theme-secondary-color: #4A5568; /* Slate gray for subheadings */
+  --slidev-c-text-warm: #2D3748; /* Warm dark gray for text */
+  --ai-quote-background: #EBF8FF;
+  --ai-quote-color: #2C5282;
+  --ai-quote-border: #4299E1;
+  --problem-term-color: #DD6B20;
+}
+
+.dark {
+  --slidev-theme-secondary-color: #A0AEC0; /* Lighter slate for dark mode */
+  --slidev-c-text-warm: #E2E8F0; /* Soft light gray for text */
+  --ai-quote-background: #2A4365;
+  --ai-quote-color: #EBF8FF;
+  --ai-quote-border: #63B3ED;
+  --problem-term-color: #F6AD55;
+}
+
+/* --- Base Typography & Layout --- */
+h1 {
+  color: var(--slidev-theme-primary);
+  font-size: 24px !important;
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--slidev-theme-secondary-color);
+  font-size: 24px !important;
+}
+
+ul, ol {
+  font-size: 12px !important;
+}
+
+li {
+  color: var(--slidev-c-text-warm);
+  margin-bottom: 2px !important;
+}
+
+/* Colorize list markers */
+li::marker {
+  color: var(--slidev-theme-primary);
+}
+
+p {
+  color: var(--slidev-c-text-warm);
+  margin-bottom: 4px !important;
+}
+
+.slidev-layout {
+  height: 100%;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+/* --- Code Block Styles --- */
+pre {
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+  max-height: 90vh !important;
+  overflow-y: auto !important;
+}
+
+code {
+  font-size: 10px !important;
+}
+
+.slidev-code {
+  font-family: var(--slidev-code-font-family) !important;
+  padding: var(--slidev-code-padding) !important;
+  font-size: var(--slidev-code-font-size) !important;
+  line-height: 12px !important;
+  border-radius: var(--slidev-code-radius) !important;
+  background: var(--slidev-code-background);
+  overflow: auto;
+}
+
+/* --- Custom Component Styles --- */
+.ai-quote {
+  background-color: var(--ai-quote-background);
+  color: var(--ai-quote-color);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--ai-quote-border);
+  margin-top: 1rem;
+}
+
+.problem-term {
+  color: var(--problem-term-color);
+  font-weight: 600;
+}
