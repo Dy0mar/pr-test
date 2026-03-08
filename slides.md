@@ -14,61 +14,78 @@ transition: slide-left
 Engineering Thinking Assessment
 
 ---
-src: ./pages/2.md
+
+src: ./pages/S.code.md
 ---
 
----
-src: ./pages/3.md
----
-
----
-src: ./pages/4.md
+src: ./pages/S.problems.md
 ---
 
----
-src: ./pages/5.md
----
-
----
-src: ./pages/6.md
+src: ./pages/S.refactored_code.md
 ---
 
----
-src: ./pages/7.md
----
-
----
-src: ./pages/8.md
+src: ./pages/O.code.md
 ---
 
----
-src: ./pages/9.md
----
-
----
-src: ./pages/10.md
+src: ./pages/O.problems.md
 ---
 
----
-src: ./pages/11.md
----
-
----
-src: ./pages/12.md
+src: ./pages/O.refactored_code.md
 ---
 
----
-src: ./pages/13.md
----
-
----
-src: ./pages/14.md
+src: ./pages/L.code.md
 ---
 
----
-src: ./pages/15.md
+src: ./pages/L.problems.md
 ---
 
+src: ./pages/L.refactored_code.md
 ---
-src: ./pages/16.md
+
+src: ./pages/I.code.md
 ---
+
+src: ./pages/I.problems.md
+---
+
+src: ./pages/I.refactored_code.md
+---
+
+src: ./pages/D.code.md
+---
+
+src: ./pages/D.problems.md
+---
+
+src: ./pages/D.refactored_code.md
+---
+
+# Summary
+
+**SOLID Principles:**
+
+| Principle | Problem | Solution |
+|-----------|---------|----------|
+| **SRP** | God Function | Separate domain logic |
+| **OCP** | Modify for new features | Strategy Pattern |
+| **LSP** | Subclass breaks contract | Interface Segregation |
+| **ISP** | Fat interface | Small focused protocols |
+| **DIP** | Tight coupling | Dependency Injection |
+
+---
+
+# Your Turn
+
+Add your own code examples for discussion
+
+---
+
+# Discussion Summary
+
+Key takeaways from this interview:
+
+-
+
+-
+
+-
