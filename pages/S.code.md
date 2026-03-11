@@ -1,4 +1,4 @@
-# SRP - The Code
+# The Code
 
 ```python {1-}{lines:true, maxHeight:'400px'}
 import httpx
